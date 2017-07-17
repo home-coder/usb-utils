@@ -1,2 +1,16 @@
 # usb-utils
  libusb 是一个用C语言开发的跨平台的USB设备访问接口库。使用它，不需要知道操作系统的细节，也不需要底层驱动，只须对USB有足够的了解，所有的工作都可以在用户态完成。
+
+ Ubuntu台式机机器测试
+ Ubuntu上安装方法：
+	 sudo apt-get install libusb-1.0-0-dev
+	 头文件 <libusb-1.0/libusb.h>
+	 链接库 -lusb-1.0
+	 关于api，由于网上的例子鱼龙混杂,这里说明一下1.0版本的api都是以libusb_开头的.
+
+gcc yang.c -lusb-1.0
+sudo ./a.out
+
+-----------------------------------------------------
+
+
