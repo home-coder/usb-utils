@@ -1,6 +1,7 @@
 #include <unistd.h>
 #include <stdio.h>
-#include <libusb-1.0/libusb.h>
+//#include <libusb-1.0/libusb.h>
+#include "libusb-1.0.9/_install86/include/libusb-1.0/libusb.h"
 
 // First, use "lsusb" see vid and pid.  
 // there is my printer(hp deskjet 1010) vid and pid.  
@@ -39,7 +40,7 @@ int main()
 		perror("Init Error\n");	//there was an error  
 		return 1;
 	}
-	libusb_set_debug(ctx, LIBUSB_LOG_LEVEL_INFO);	//set verbosity level to 3, as suggested in the documentation  
+//	libusb_set_debug(ctx, LIBUSB_LOG_LEVEL_INFO);	//set verbosity level to 3, as suggested in the documentation  
 
 	cnt = libusb_get_device_list(ctx, &devs);	//get the list of devices  
 	if (cnt < 0) {

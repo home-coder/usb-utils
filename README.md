@@ -8,7 +8,8 @@
 	 链接库 -lusb-1.0
 	 关于api，由于网上的例子鱼龙混杂,这里说明一下1.0版本的api都是以libusb_开头的.
 
-gcc yang.c -lusb-1.0
+//gcc yang.c -lusb-1.0
+gcc -o yang yang.c -L. -lusb-1.0 使用本地编译出来的libusb动态库，不再使用Ubuntu apt-get安装的
 sudo ./a.out
 
 -----------------------------------------------------
@@ -20,3 +21,6 @@ sudo ./a.out
 gcc -c help.c
 gcc -o help help.o -L. -lusb-1.0
 其中 上面的usb-1.0是从 libusb-1.0.9 中拿到 libusb-1.0.so这个动态库，然后就是标准的动态库参与编译的写法了
+
+----------------------------------------------------
+usbutils的编译通不过，因为里面用到了libudev
