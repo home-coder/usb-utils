@@ -1,11 +1,8 @@
-#ARCH=x86org
-ARCH=amlogic
-
-#$(info, $(ARCH))//内核 androidmk使用
+ARCH=x86org
 
 ifeq ($(ARCH), x86org)
     CC = gcc
-    CFLAGS = -DORG_TEST -O2  -Wall --static
+    CFLAGS = -O2  -Wall 
 endif
 
 yang:yang.o
