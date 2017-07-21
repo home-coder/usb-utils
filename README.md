@@ -31,3 +31,8 @@ usbutils的编译通不过，因为里面用到了libudev
 0. 需掌握lib库的使用，应用场景//新建一个git仓来做这件事情
 1. 完成usb的热插拔监测
 2. 完成usb数据传输功能，需要依赖具体的设备和设备协议
+
+
+0号任务
+use-lib-scene这个目录 git@github.com:home-coder/use-lib-scene.git就是完成上面0任务的，已经搞定.
+-
