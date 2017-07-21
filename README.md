@@ -47,3 +47,5 @@ use-lib-scene这个目录 git@github.com:home-coder/use-lib-scene.git就是完�
 #make && make install
 
 ------------------------------------------------------------------
+2号任务
+参考链接http://blog.csdn.net/dotphoenix/article/details/39158149
