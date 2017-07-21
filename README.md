@@ -36,3 +36,14 @@ usbutils的编译通不过，因为里面用到了libudev
 0号任务
 use-lib-scene这个目录 git@github.com:home-coder/use-lib-scene.git就是完成上面0任务的，已经搞定.
 -
+并且libusb库的编译方式如下
+#!/bin/bash
+#MGCC=/opt/toolchain/mstar/linaro-aarch64_linux-2014.09_843419-patched/bin/aarch64-linux-gnu-gcc
+#./configure CC=$MGCC  --host=arm-linux --prefix=$PWD/_install  
+#make && make install
+
+#---------x86平台----------
+#./configure  --prefix=$PWD/_install86
+#make && make install
+
+------------------------------------------------------------------
