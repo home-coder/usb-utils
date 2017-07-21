@@ -1,7 +1,7 @@
 #include <stdio.h>  
 #include <sys/types.h>  
 //#include <libusb.h>  
-#include "libusb-1.0.9/_install86/include/libusb-1.0/libusb.h"
+#include "../libusb-1.0.9/_install86/include/libusb-1.0/libusb.h"
 
 static void print_devs(libusb_device **devs)  
 {  
